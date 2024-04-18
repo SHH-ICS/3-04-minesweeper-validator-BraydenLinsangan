@@ -13,18 +13,14 @@ def validate( block_data ):
         if block_data[i][j] == -1:
           bomb_count = bomb_count + 1
           if block_data[1][1] == -1:
-            def myfunction():
-              return "bomb"
-            print(myfunction())
+            block_data = "Bomb"
+            return block_data
           if block_data[1][1] >= 1:
-            def myfunction():
-              return "valid"
-            print(myfunction())
+            block_data = "Valid"
+            return block_data
           if block_data[1][1] <= -2:
-            def myfunction():
-              return "invalid"
-            print(myfunction())
-            return(block_data)
+            block_data = "Invalid"
+            return block_data
 
 grid = [
   [-1,1,0],
